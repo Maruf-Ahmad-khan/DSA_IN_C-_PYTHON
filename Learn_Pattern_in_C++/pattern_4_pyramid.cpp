@@ -1,0 +1,30 @@
+// write a program to print the pattern
+// Your patter will be : 
+// * * * * * 
+//  * * * * 
+//   * * * 
+//    * * 
+//     *
+
+#include <iostream>
+using namespace std;
+int main()
+{
+     int n;
+     cout << "Enter n : " << endl;
+     cin >> n;
+     cout<<"Your patter will be : "<<endl;
+     for (int row = 1; row <= n; row++)
+     {
+          for (int col = 1; col <= row - 1; col++)
+          {
+               cout << " ";
+          }
+          for(int col = 1; col <= n - row + 1; col ++)
+          {
+               cout<<"* ";
+          }
+          cout << endl;
+     }
+     return 0;
+}
